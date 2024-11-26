@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+</head>
+<body>
+    
+<!-- Task 1: Day of the Week Message
+Scenario: Develop a webpage that displays a special message based on the current day of the week.
+
+“Start your week strong!” for Monday.
+“Keep going!” for Tuesday.
+“Halfway there!” for Wednesday.
+“Almost the weekend!” for Thursday.
+“Happy Friday!” for Friday.
+“Enjoy your weekend!” for Saturday and Sunday.
+
+Task:
+Get the current day of the week.
+Display the corresponding message. -->
+
+    <script>
+        var a=new Date();
+        var day=a.getDay();
+        if(day==0){
+            console.log("Sunday");
+        }
+        else if(day==1){
+            console.log("Monday");
+        }
+        else if(day==2){
+            console.log("Tuesday");
+        }
+        else if(day==3){
+            console.log("Wednesday");
+        }
+        else if(day==4){
+            console.log("Thursday");
+        }
+        else if(day==5){
+            console.log("Friday");
+        }
+        else{
+            console.log("Saturday");
+        }  
+    </script>
+</body>
+</html>

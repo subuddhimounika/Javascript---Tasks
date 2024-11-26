@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Group</title>
+</head>
+<body>
+
+<!-- Age Group: Declare a variable age and 
+use the ternary operator to classify the age into "Child" (0-12), "Teen" (13-19), "Adult" (20-64), and "Senior" (65 and above). Log the result. -->
+   
+    <script>
+        var age=+prompt("Enter your age");
+        var group=(age<=12)?"Child":
+                   (age<=19)?"Teen":
+                   (age<=64)?"Adult":"Senior";
+        console.log(group);
+    </script>
+</body>
+</html>

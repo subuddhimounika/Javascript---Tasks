@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- Task 5: Simple Calculator
+Scenario: You are developing a simple calculator that performs basic arithmetic operations.
+Task:
+Assume variables num1 and num2 hold two numbers, and operator holds the arithmetic operator as a string (e.g., “+”).
+Use a switch case statement to perform the operation and store the result in a variable result.
+Print the result. -->
+
+    <script>
+        var a=+prompt("Enter a value:");
+        var b=+prompt("Enter b value");
+        var op=prompt("Enter an operator");
+        if(op=="+"){
+            console.log(a+b);
+        }
+        else if(op=="-"){
+            console.log(a-b);
+        }
+        else if(op="*"){
+            console.log(a*b);
+        }
+        else if(op="/"){
+            console.log(a/b);
+        }
+        else{
+            console.log("operator is not present in this calculator");
+        }
+
+    </script>
+</body>
+</html>

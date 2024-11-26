@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature</title>
+</head>
+<body>
+
+<!-- Temperature Check: Declare a variable temperature and 
+ use nested ternary operators to categorize it as "Hot" (above 30), "Warm" (20-30), "Cool" (10-19), and "Cold" (below 10). Log the result. -->
+
+
+    <script>
+        var temp=+prompt("Enter the temperature");
+        var water=(temp<10)?"cold":
+                   (temp<=19)?"Cool":
+                   (temp<=30)?"Warm":"Hot";
+        console.log(water);
+    </script>
+</body>
+</html>
