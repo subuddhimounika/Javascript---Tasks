@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+</head>
+<body>
+    <script>
+        // Task1 : reverse a string input: hello output : olleh
+        var str="Mounika";
+        var a="";
+        for(var i=str.length-1;i>=0;i--){
+            a=a+str[i]+" ";
+        }
+        console.log("Task1: ")
+        console.log("Original String:",str)
+        console.log("Reversed String:",a);
+
+
+
+
+       //Task2 :  find a even numbers sum and odd numbers sum in an array - [23,54,67,64,46,95,98]
+       console.log("Task2: ")
+        var arr=[23,54,67,64,46,95,98];
+        evensum=0;
+        oddsum=0;
+        var even_numbers="";
+        var odd_numbers="";
+        for(i=0;i<arr.length;i++){
+            if(arr[i]%2==0){
+                evensum+=arr[i];
+                even_numbers+=arr[i]+" ";
+            }
+            else{
+                oddsum+=arr[i];
+                odd_numbers+=arr[i]+" ";
+            }
+        }
+        console.log("even numbers:"+even_numbers)
+        console.log("evensum:",evensum);
+        console.log("odd numbers:"+odd_numbers)
+        console.log("oddsum:",oddsum);
+
+
+
+
+        //Task3 : iterate an object values and keys using for of loop
+        console.log("Task3: ")
+        var obj={
+            name:"Riya",
+            age:"22",
+            daughter_of:"Damini",
+            case:"Kidnap"
+        };
+        for(var [key,value] of Object.entries(obj)){
+            console.log(`${key}: ${value}`);
+        }
+    </script>
+</body>
+</html>

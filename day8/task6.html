@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function temperature(temp,scale){
+            if(scale=="celsius"){
+                celsius=(temp-32)*(5/9);
+                return celsius;
+            }
+            else if(scale=="farenheat"){
+                farenheat=(temp*(9/5))+32;
+                return farenheat;
+            }  
+            else{
+                return "scale is in only celsius and faren heat"
+            }
+        }
+        temp=prompt("Enter the temperature")
+        scale=prompt("Enter the scale celsius or farenheat")
+        console.log(temperature(temp,scale))
+    </script>
+</body>
+</html>

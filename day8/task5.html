@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task5</title>
+</head>
+<body>
+    <script>
+        function word(str){
+            count=0
+            for(i=0;i<str.length;i++){
+                if(str[i]=="a" || str[i]=="e" || str[i]=="i" || str[i]=="o" || str[i]=="u"){
+                    count++;
+                    console.log(str[i]);
+                }
+            } 
+            if(count>0){
+                console.log("vowels are there")
+            }
+        }
+        str=prompt("Enter your name")
+        word(str)
+        
+    </script>
+</body>
+</html>
